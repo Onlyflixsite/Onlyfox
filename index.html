@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyFox</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: linear-gradient(to bottom, #000, #0a0a0a);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #c27fff;
+      text-shadow: 0 0 6px #c27fff;
+      animation: pulse 2s infinite;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 6px #c27fff; }
+      50% { text-shadow: 0 0 14px #c27fff; }
+    }
+
+    .subtitulo {
+      color: #c27fff;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+
+    .botao {
+  background: linear-gradient(90deg, #ff00f7, #c27fff, #ff00f7);
+  color: #fff;
+  font-weight: 900;
+  border: 2px solid #fff;
+  padding: 16px 30px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: pulseBtn 1.5s infinite, glow 2s infinite;
+  box-shadow: 0 0 20px #c27fff;
+  text-shadow: 0 0 6px #000;
+}
+
+@keyframes pulseBtn {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #fff;
+  }
+  50% {
+    transform: scale(1.07);
+    box-shadow: 0 0 30px #ff00f7;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px #c27fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px #ff00f7);
+  }
+}
+
+    .video-container {
+      display: none;
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.postimg.cc/qhCPYYRd/onlyfox-4.png" alt="Logo OnlyFox" class="logo" />
+    <h1>CONTEÚDO PROIBIDO DAS FAMOSAS</h1>
+    <p class="subtitulo">O conteúdo mais desejado da internet, agora ao seu alcance.</p>
+   <button class="botao" onclick="mostrarVideo()">CLIQUE AQUI</button>
+
+    <div class="video-container" id="videoContainer">
+      <video id="videoPlayer" controls autoplay muted playsinline>
+        <source src="https://files.catbox.moe/kquntw.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+  </header>
+
+  <script>
+    function mostrarVideo() {
+      const botao = document.querySelector('.botao');
+      const container = document.getElementById('videoContainer');
+      const video = document.getElementById('videoPlayer');
+
+      botao.style.display = 'none';
+      container.style.display = 'block';
+      video.muted = false;
+      video.play();
+    }
+  </script>
+
+</body>
+</html>
+<section id="carrossel" style="margin-top: 40px; padding: 0 10px;">
+  <h2 style="
+    color: #c27fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+    text-shadow: 0 0 6px #c27fff;
+  ">
+    ALGUMAS FAMOSAS ⬇
+  </h2>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="https://i.postimg.cc/gXHJwN98/photo-2023-10-16-19-22-49.jpg" />
+      <img src="https://i.postimg.cc/K3cYtBFV/photo-2024-03-01-16-29-18.jpg" />
+      <img src="https://i.postimg.cc/BX666TmP/photo-2024-08-18-08-46-53.jpg" />
+      <img src="https://i.postimg.cc/6TzqtjfN/photo-2024-08-23-15-20-10.jpg" />
+      <img src="https://i.postimg.cc/z3q3mZWj/photo-2024-09-09-01-24-11.jpg" />
+      <img src="https://i.postimg.cc/DS4wQ2k2/photo-2024-12-02-22-34-12.jpg" />
+      <img src="https://i.postimg.cc/4KCNBrsp/photo-2024-12-21-02-22-20.jpg" />
+      <img src="https://i.postimg.cc/mt5rFPnX/photo-2025-01-07-22-07-24.jpg" />
+      <img src="https://i.postimg.cc/CZjMtmxX/photo-2025-05-21-17-31-40.jpg" />
+      <img src="https://i.postimg.cc/0MP5qD6Q/photo-2025-05-30-22-43-32.jpg" />
+      <img src="https://i.postimg.cc/xJ5fj8HP/photo-2025-06-12-11-08-34.jpg" />
+      <img src="https://i.postimg.cc/Th227jMN/photo-2025-06-21-12-29-20.jpg" />
+      <img src="https://i.postimg.cc/ThkdZyTd/photo-2025-07-09-20-03-46.jpg" />
+      <img src="https://i.postimg.cc/56641xtw/photo-2025-07-23-10-18-05.jpg" />
+    </div>
+  </div>
+
+  <style>
+    .carousel {
+      overflow: hidden;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      width: max-content;
+      animation: slide 45s linear infinite;
+    }
+
+    .carousel-track img {
+      height: 300px;
+      width: auto;
+      object-fit: cover;
+      margin: 0 8px;
+      border-radius: 12px;
+      border: 2px solid #c27fff;
+      box-shadow: 0 0 10px #c27fff;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 6px #c27fff; }
+      50% { text-shadow: 0 0 14px #c27fff; }
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .carousel-track img {
+        height: 200px;
+      }
+    }
+  </style>
+</section>
+<section id="vantagens" style="padding: 40px 20px; background: #000;">
+  <h2 style="
+    color: #c77dff;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    animation: pulse 2s infinite;
+    border: 2px solid #c77dff;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 12px;
+  ">
+    Por que se tornar VIP?
+  </h2>
+
+  <div style="
+    border: 2px solid #c77dff;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 15px #c77dff55;
+    max-width: 100%;
+  ">
+    <ul style="
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.6;
+      list-style: none;
+      padding-left: 0;
+    ">
+      <li>✅ Acesso imediato ao conteúdo +18 exclusivo</li>
+      <li>✅ Sem censura, sem travamentos</li>
+      <li>✅ Conteúdos vazados das famosas atualizados</li>
+      <li>✅ Garantia de anonimato e total privacidade</li>
+      <li>✅ Sem necessidade de instalar nada</li>
+      <li>✅ Pagamento único ou mensal — você escolhe</li>
+      <li>✅ Suporte rápido direto no WhatsApp</li>
+      <li>✅ Liberação instantânea após o pagamento</li>
+    </ul>
+  </div>
+</section>
+
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+</style>
+<section style="padding: 40px 20px; background-color: #000; color: #fff; text-align: center;">
+  <h2 style="font-size: 1.8rem; color: #c084fc; text-shadow: 0 0 10px #c084fc; margin-bottom: 30px; animation: pulse 2s infinite;">
+    ESCOLHA SEU ACESSO VIP ⬇
+  </h2>
+
+  <div style="display: flex; flex-direction: column; gap: 25px; align-items: center;">
+
+    <!-- PLANO MENSAL -->
+    <div style="border: 2px solid #c084fc; border-radius: 16px; padding: 25px 20px; width: 90%; max-width: 360px; box-shadow: 0 0 12px #c084fc; background-color: #111; position: relative;">
+      <span style="position: absolute; top: -12px; right: -12px; background: #facc15; color: #000; font-weight: bold; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; box-shadow: 0 0 6px #fff;">
+        + ACESSADO
+      </span>
+      <h3 style="font-size: 1.7rem; color: #c084fc; text-shadow: 0 0 8px #c084fc; margin-bottom: 8px;">
+        PLANO MENSAL
+      </h3>
+      <strong style="font-size: 2rem; color: #fff;">R$ 10,00</strong>
+      <ul style="text-align: left; margin-top: 16px; font-size: 1rem; line-height: 1.5; padding-left: 20px; color: #e9d5ff;">
+        <li>✅ Acesso por 30 dias</li>
+        <li>🚀 Atualizações diárias</li>
+        <li>🔓 Conteúdo exclusivo e recente</li>
+        <li>📲 Suporte rápido no WhatsApp</li>
+      </ul>
+      <a href="https://pay.kirvano.com/3fab3094-2043-4cda-a2db-4bab4c77adef" target="_blank" style="display: inline-block; margin-top: 20px; background: #c084fc; color: #000; padding: 12px 24px; border-radius: 30px; font-weight: bold; text-decoration: none; box-shadow: 0 0 8px #fff; animation: pulseBtn 1.5s infinite;">
+        ASSINAR MENSAL 🔥
+      </a>
+    </div>
+
+    <!-- PLANO VITALÍCIO -->
+    <div style="border: 2px solid #22c55e; border-radius: 16px; padding: 25px 20px; width: 90%; max-width: 360px; box-shadow: 0 0 12px #22c55e; background-color: #111; position: relative;">
+      <span style="position: absolute; top: -12px; left: -12px; background: #10b981; color: #fff; font-weight: bold; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; box-shadow: 0 0 6px #10b981;">
+        🔒 ACESSO TOTAL
+      </span>
+      <h3 style="font-size: 1.7rem; color: #22c55e; text-shadow: 0 0 8px #22c55e; margin-bottom: 8px;">
+        PLANO VITALÍCIO
+      </h3>
+      <strong style="font-size: 2rem; color: #fff;">R$ 20,00</strong>
+      <ul style="text-align: left; margin-top: 16px; font-size: 1rem; line-height: 1.5; padding-left: 20px; color: #bbf7d0;">
+        <li>✅ Acesso pra sempre</li>
+        <li>🔥 Sem mensalidades</li>
+        <li>🔐 Tudo liberado 24h</li>
+        <li>🎁 Bônus ocultos exclusivos</li>
+        <li>📞 Suporte vitalício direto</li>
+      </ul>
+      <a href="https://pay.kirvano.com/d0af6c00-6cbc-4cc9-b298-fb58cb2bb3e5" target="_blank" style="display: inline-block; margin-top: 20px; background: #22c55e; color: #000; padding: 12px 24px; border-radius: 30px; font-weight: bold; text-decoration: none; box-shadow: 0 0 8px #fff; animation: pulseBtn 1.5s infinite;">
+        COMPRAR VITALÍCIO 💎
+      </a>
+    </div>
+  </div>
+
+  <!-- Rodapé com informações extras -->
+  <footer style="margin-top: 40px; padding-top: 30px; font-size: 0.9rem; color: #ccc;">
+    <p>© 2025 OnlyFox VIP - Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:onlyfox021@gmail.com" style="color: #c084fc; text-decoration: underline;">onlyfox021@gmail.com</a></p>
+    <p style="font-size: 0.8rem; color: #999;">Conteúdo exclusivo para maiores de 18 anos. Pagamentos protegidos e ambiente seguro.</p>
+  </footer>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px #c084fc;
+      }
+      50% {
+        text-shadow: 0 0 20px #d8b4fe;
+      }
+    }
+
+    @keyframes pulseBtn {
+      0% {
+        box-shadow: 0 0 8px #fff;
+        transform: scale(1);
+      }
+      50% {
+        box-shadow: 0 0 14px #fff;
+        transform: scale(1.05);
+      }
+      100% {
+        box-shadow: 0 0 8px #fff;
+        transform: scale(1);
+      }
+    }
+  </style>
+</section>
