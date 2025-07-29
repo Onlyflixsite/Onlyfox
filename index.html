@@ -149,20 +149,20 @@ html, body {
 
   <div class="carousel">
     <div class="carousel-track">
-      <img src="https://i.postimg.cc/gXHJwN98/photo-2023-10-16-19-22-49.jpg" />
-      <img src="https://i.postimg.cc/K3cYtBFV/photo-2024-03-01-16-29-18.jpg" />
-      <img src="https://i.postimg.cc/BX666TmP/photo-2024-08-18-08-46-53.jpg" />
-      <img src="https://i.postimg.cc/6TzqtjfN/photo-2024-08-23-15-20-10.jpg" />
-      <img src="https://i.postimg.cc/z3q3mZWj/photo-2024-09-09-01-24-11.jpg" />
-      <img src="https://i.postimg.cc/DS4wQ2k2/photo-2024-12-02-22-34-12.jpg" />
-      <img src="https://i.postimg.cc/4KCNBrsp/photo-2024-12-21-02-22-20.jpg" />
-      <img src="https://i.postimg.cc/mt5rFPnX/photo-2025-01-07-22-07-24.jpg" />
-      <img src="https://i.postimg.cc/CZjMtmxX/photo-2025-05-21-17-31-40.jpg" />
-      <img src="https://i.postimg.cc/0MP5qD6Q/photo-2025-05-30-22-43-32.jpg" />
-      <img src="https://i.postimg.cc/xJ5fj8HP/photo-2025-06-12-11-08-34.jpg" />
-      <img src="https://i.postimg.cc/Th227jMN/photo-2025-06-21-12-29-20.jpg" />
-      <img src="https://i.postimg.cc/ThkdZyTd/photo-2025-07-09-20-03-46.jpg" />
-      <img src="https://i.postimg.cc/56641xtw/photo-2025-07-23-10-18-05.jpg" />
+      <img src="https://i.postimg.cc/gXHJwN98/photo-2023-10-16-19-22-49.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/K3cYtBFV/photo-2024-03-01-16-29-18.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/BX666TmP/photo-2024-08-18-08-46-53.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/6TzqtjfN/photo-2024-08-23-15-20-10.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/z3q3mZWj/photo-2024-09-09-01-24-11.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/DS4wQ2k2/photo-2024-12-02-22-34-12.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/4KCNBrsp/photo-2024-12-21-02-22-20.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/mt5rFPnX/photo-2025-01-07-22-07-24.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/CZjMtmxX/photo-2025-05-21-17-31-40.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/0MP5qD6Q/photo-2025-05-30-22-43-32.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/xJ5fj8HP/photo-2025-06-12-11-08-34.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/Th227jMN/photo-2025-06-21-12-29-20.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/ThkdZyTd/photo-2025-07-09-20-03-46.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
+      <img src="https://i.postimg.cc/56641xtw/photo-2025-07-23-10-18-05.jpg" style="cursor: pointer;" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });" />
     </div>
   </div>
 
@@ -196,18 +196,14 @@ html, body {
       100% { transform: translateX(-50%); }
     }
 
-    @keyframes pulse {
-      0%, 100% { text-shadow: 0 0 6px #c27fff; }
-      50% { text-shadow: 0 0 14px #c27fff; }
-    }
-
-    /* Responsivo */
     @media (max-width: 600px) {
       .carousel-track img {
         height: 200px;
       }
     }
   </style>
+</section>
+
 </section>
 <section id="vantagens" style="padding: 40px 20px; background: #000;">
   <h2 style="
@@ -260,7 +256,7 @@ html, body {
   100% { transform: scale(1); opacity: 1; }
 }
 </style>
-<section style="padding: 40px 20px; background-color: #000; color: #fff; text-align: center;">
+<section <section id="planos" style="padding: 40px 20px; background-color: #000; color: #fff; text-align: center;">
   <h2 style="font-size: 1.8rem; color: #c084fc; text-shadow: 0 0 10px #c084fc; margin-bottom: 30px; animation: pulse 2s infinite;">
     ESCOLHA SEU ACESSO VIP ⬇
   </h2>
